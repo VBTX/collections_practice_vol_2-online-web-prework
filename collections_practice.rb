@@ -26,13 +26,16 @@ end
 
 
 def count_elements(array)
-  array.collect do |name|
+  nArr = []
+  array.each do |name|
     nObj = {}
     count = 0
     count += array.count(name)
     nObj[:name] = name
     nObj[:count] = count
+    nArr.push(nObj)
   end
+  nArr
 end
 
 
