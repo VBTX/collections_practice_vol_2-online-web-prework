@@ -43,7 +43,7 @@ def count_elements(array)
 
    def find_cool(cool)
       cool.select do |i|
-        i.any? do |k,v| 
+        i.any? do |k,v|
           v == "cool"
         end
       end
