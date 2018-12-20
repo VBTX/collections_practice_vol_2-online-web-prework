@@ -33,7 +33,7 @@ def count_elements(array)
 
 
 def merge_data(keys, data)
-  merged = keys.flatten(data)
+  merged = keys.merge(data)
   return merged
 end
 
