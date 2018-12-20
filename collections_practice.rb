@@ -43,6 +43,9 @@ def count_elements(array)
  end
 
 
-def organize_schools(array)
-  array.sort
+  def organize_schools(array)
+    locations = {}
+    array.collect {|k,v| locations[v[:location]] = []}
+    locations.each {|k,v| array.each {|k1,v1| if k == v1[:location] then v << k1  end}}
 end
+
