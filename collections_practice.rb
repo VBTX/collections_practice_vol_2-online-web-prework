@@ -48,4 +48,3 @@ def count_elements(array)
     array.collect {|k,v| locations[v[:location]] = []}
     locations.each {|k,v| array.each {|k1,v1| if k == v1[:location] then v << k1  end}}
 end
-
