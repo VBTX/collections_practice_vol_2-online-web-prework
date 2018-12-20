@@ -26,17 +26,10 @@ end
 
 
 def count_elements(array)
-  nArr = []
-  array.each do |elem|
-    nObj = {}
-    count = 0
-    count += array.count(elem)
-    nObj[:count] = count
-    nElem = array[elem].merge(nObj)
-    nArr.push(nElem)
-  end
-  nArr
-end
+  array.uniq.each {|i| count = 0
+         array.each {|i2| if i2 == i then count += 1 end}
+         i[:count] = count}
+ end
 
 
 def merge_data(keys, data)
