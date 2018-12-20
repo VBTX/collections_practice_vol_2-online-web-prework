@@ -26,7 +26,7 @@ end
 
 
 def count_elements(array)
-  words = %w(array)
+  words = array
   words.each_with_object(Hash.new(0)) { |word,counts| counts[word] += 1 }
 end
 
