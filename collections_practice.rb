@@ -27,12 +27,12 @@ end
 
 def count_elements(array)
   nArr = []
-  array.each do |name|
+  array.each do |elem|
     nObj = {}
     count = 0
-    count += array.count(name)
-
+    count += array.count(elem)
     nObj[:count] = count
+    nObj[:name] = elem
     nArr.push(nObj)
   end
   nArr
