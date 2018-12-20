@@ -48,3 +48,16 @@ def count_elements(array)
     array.collect {|k,v| locations[v[:location]] = []}
     locations.each {|k,v| array.each {|k1,v1| if k == v1[:location] then v << k1  end}}
 end
+
+=begins
+1) collections practice vol 2. #organize_schools organizes the schools by location
+     
+       expected: {"Chicago"=>["dev boot camp chicago"], "NYC"=>["flatiron school bk", "flatiron school", "general assembly"], "SF"=>["dev boot camp", "Hack Reactor"]}
+            got: [["Hack Reactor", {:location=>"SF"}], ["dev boot camp", {:location=>"SF"}], ["dev boot camp chicago",...tion=>"NYC"}], ["flatiron school bk", {:location=
+>"NYC"}], ["general assembly", {:location=>"NYC"}]]
+       (compared using ==)
+       Diff:
+       @@ -1,4 +1,7 @@
+       -"Chicago" => ["dev boot camp chicago"],
+       -"NYC" => ["flatiron school bk", "flatiron school", "general assembly"],
+=end
