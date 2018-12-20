@@ -34,15 +34,15 @@ def count_elements(array)
 
  def merge_data(keys, data)
     merged = []
-    keys.each 
-    {|i| data.first.map 
+    keys.each
+    {|i| data.first.map
       {|k,v| if i.values[0] == k then merged << i.merge(v) end}
       }
     merged
   end
 
    def find_cool(cool)
-      cool.select do |i| 
+      cool.select do |i|
         i.any? do |k,v| 
           v == "cool"
         end
