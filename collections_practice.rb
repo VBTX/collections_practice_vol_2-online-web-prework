@@ -47,7 +47,6 @@ def count_elements(array)
           v == "cool"
         end
       end
-  end
 
 def organize_schools(array)
   array.sort
