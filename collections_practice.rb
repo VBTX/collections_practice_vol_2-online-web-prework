@@ -32,8 +32,8 @@ def count_elements(array)
     count = 0
     count += array.count(elem)
     nObj[:count] = count
-    nObj[:name] = elem
-    nArr.push(nObj)
+    nElem = array[elem].merge(nObj)
+    nArr.push(nElem)
   end
   nArr
 end
