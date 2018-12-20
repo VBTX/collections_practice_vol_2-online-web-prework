@@ -26,8 +26,13 @@ end
 
 
 def count_elements(array)
-  words = array
-  words.each_with_object(Hash.new(0)) { |word,counts| counts[word] += 1 }
+  array.collect do |name|
+    nObj = {}
+    count = 0
+    count += array.count(name)
+    nObj[:name] = name
+    nObj[:count] = count
+  end
 end
 
 
